@@ -1,12 +1,84 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  font-family: cursive;
+  background-color: rgb(152, 199, 152);
+  background-position-x: -90px;
+  background-position-y: -25px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% auto 20%;
+  grid-template-areas:
+    "top"
+    "bottom"
+    "below";
+}
+
+#result {
+  text-align: center;
+  grid-area: top;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(240, 94, 10);
+  margin-right: 850px;
+  margin-left: 850px;
+}
+
+p {
+  color: rgb(235, 74, 74);
+  text-align: center;
+  font-size: 25px;
 }
 
 #buttons {
-  height: 100vh;
+  grid-area: bottom;
+  display: flex;
+  justify-content: center;
+}
+
+#button img {
+  width: 60%;
+  height: 60%;
 }
 
 #button {
+  margin: 200px 40px;
+  height: 190px;
+  width: 200px;
+  border-style: none;
+  border-radius: 50%;
+}
+
+#button:hover {
+  box-shadow: 1px 1px 50px 10px rgb(47, 194, 108);
+  cursor: pointer;
+}
+
+#button:focus {
+  transform: rotate(360deg);
+  transition: 0.8s;
+  outline: none;
+}
+
+#options {
+  grid-area: below;
+  text-align: center;
+}
+
+#reset-button {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  background-color: rgb(228, 125, 66);
+  border-style: none;
+  color: rgb(39, 35, 35);
+  border-radius: 50%;
+}
+
+#reset-button:hover {
+  background-color: rgb(243, 119, 47);
+  color: rgb(207, 206, 206);
 }
