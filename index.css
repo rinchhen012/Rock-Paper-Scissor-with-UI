@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: cursive;
   background-color: rgb(152, 199, 152);
   background-position-x: -90px;
